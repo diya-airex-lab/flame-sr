@@ -1,0 +1,50 @@
+flame-sr/
+│
+├── src/
+│   ├── __init__.py
+│   ├── config.py                    # Configuration and hyperparameters
+│   ├── data/
+│   │   ├── __init__.py
+│   │   ├── dataset.py              # Dataset classes
+│   │   └── preprocessing.py        # Data loading and normalization
+│   │
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── spectral_conv.py       # Spectral convolution layers
+│   │   ├── fno.py                 # FNO architecture
+│   │   └── dual_stream.py         # Dual-stream FNO model
+│   │
+│   ├── training/
+│   │   ├── __init__.py
+│   │   ├── trainer.py             # Training loop and logic
+│   │   └── losses.py              # Loss functions
+│   │
+│   ├── evaluation/
+│   │   ├── __init__.py
+│   │   ├── metrics.py             # Evaluation metrics
+│   │   └── spectral_analysis.py   # Turbulence spectral analysis
+│   │
+│   └── visualization/
+│       ├── __init__.py
+│       ├── plotting.py            # Visualization functions
+│       └── latex_tables.py        # LaTeX table generation
+│
+├── scripts/
+│   ├── train.py                    # Main training script
+│   ├── evaluate.py                 # Evaluation script
+│   └── visualize.py                # Visualization generation
+│
+├── notebooks/
+│   └── thesis_analysis.ipynb       # Interactive analysis notebook
+│
+├── configs/
+│   ├── base_config.yaml           # Base configuration
+│   └── experiment_config.yaml     # Experiment-specific configs
+│
+├── tests/
+│   ├── test_dataset.py
+│   ├── test_models.py
+│   └── test_metrics.py
+│
+├── requirements.txt
+└── README.md
