@@ -150,9 +150,7 @@ class Config:
         """
         Prints a summary of the current configuration.
         """
-        print("=" * 80)
         print("Configuration Summary")
-        print("=" * 80)
         print(f"Device: {self.device}")
         print(f"Random Seed: {self.seed}")
         print()
@@ -176,5 +174,4 @@ class Config:
         print(f"  Learning Rate: {self.training.learning_rate}")
         print(f"  Weight Decay: {self.training.weight_decay}")
         print(f"  Patience: {self.training.patience}")
-        print("=" * 80)
         print()
